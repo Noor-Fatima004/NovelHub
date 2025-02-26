@@ -1,0 +1,237 @@
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #f4f4f4, #e0e0ff);
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(90deg, #9a91a7, #483671);
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar .logo {
+            color: white;
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            color: #ffea00;
+        }
+
+        .landing {
+            background: url('final.webp') center/cover no-repeat;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .landing h1 {
+            font-size: 3em;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .btn{
+            outline: none;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            font-size: 20px;
+            font-weight: 400;
+        }
+        .btn:hover{
+            color: blue;
+            transition: 0.5s;
+        }
+        .landing p {
+            font-size: 1.5em;
+            animation: fadeIn 3s ease-in-out;
+        }
+        
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+        }
+        form button{
+            width: auto
+        }
+        label{
+            font-weight: 900;
+        }
+        label input{
+            padding: 5px 3px ;
+            font-size: 15px;
+            width: 27%;
+        }
+        label textarea{
+            height: 20vh;
+            width: 30%;
+            font-weight: 500;
+            font-size: 15px;
+        }
+        form button{
+            font-size: 24px;
+            border: none;
+            outline: none;
+            padding: 7px 15px;
+            border-radius: 10px;
+            border: 1px solid black;
+
+        }
+        form button:hover{
+            background-color: rgba(10, 44, 233, 0.43);
+            color: white;
+            transition: 1s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(25px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .novel-card {
+            margin: 5px auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .novel-card:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+        }
+
+        .novel-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .novel-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .novel-title {
+            font-size: 1.5em;
+            color: #6200ea;
+        }
+
+        .novel-description {
+            font-size: 1em;
+            color: #555;
+        }
+
+        .novel-reviews {
+            margin-top: 10px;
+            color: #ff9800;
+            font-weight: bold;
+        }
+
+        .contact {
+            background: linear-gradient(to right, #e0e0ff, #f4f4f4);
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 2em;
+            color: #3700b3;
+        }
+
+        .contact p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 2em;
+            color: white;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .navbar ul {
+                display: none;
+                flex-direction: column;
+                background: #3700b3;
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                border-radius: 10px;
+                padding: 10px;
+                height: 40vh;
+                width: 100%;
+            }
+            .navbar ul li{
+                padding: 10px;
+                transition: 1s;
+                font-size: 30px;
+            }
+            .navbar ul li a:hover{
+                transform: 1s;
+                color: red;
+            }
+            .navbar ul.show {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+            
+            label textarea{
+                width: 70%;
+                height: 10vh;
+            }
+            label input{
+                width: 70%;
+                display: block;
+                margin: auto;
+            }
+        }
+   

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp/Login form</title>
+    <link rel="shortcut icon" href="../images/pir e kamil.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="novel.css">
+
+    <link rel="stylesheet" href="class6.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">  <span>NovelHub </span></div>
+        <div class="menu-toggle">☰</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Novels</a></li>
+            <li><a href="#contact">About</a></li>
+            <li><a href="#form">Contact us</a></li>
+        </ul>
+    </nav>
+    <form
+    action="https://formspree.io/f/{FORM_ID}"
+    class="fs-form"
+    target="_top"
+    method="POST"
+  >
+    <div class="fs-field">
+      <label class="fs-label" for="name">Your Name</label>
+      <input class="fs-input" id="name" name="name" required />
+    </div>
+    <div class="fs-field">
+      <label class="fs-label" for="email">Email</label>
+      <input class="fs-input" id="email" name="email" required />
+      <p class="fs-description">
+        This will help me respond to your query via an email.
+      </p>
+    </div>
+    <div class="fs-field">
+      <label class="fs-label" for="message">Message</label>
+      <textarea
+        class="fs-textarea"
+        id="message"
+        name="message"
+        required
+      ></textarea>
+      <p class="fs-description">What would you like to discuss?</p>
+    </div>
+    <div class="fs-button-group">
+      <button class="fs-button" type="submit">Submit</button>
+    </div>
+  </form>  
+    <!-- <form action="https://formspree.io/f/xbllpvpw"
+    method="POST">
+       
+        <div class="form">
+            <h1>Sign Up</h1>
+            <div>
+                <label for="">User-Name:</label> <br>
+                <input type="text" required placeholder="User-Name" >
+            </div>
+            <div>
+                <label for="">E-Mail:</label> <br>
+                <input type="email" required placeholder="E-mail">
+            </div>
+            <div>
+                <label for="">Password:</label> <br>
+                <input type="password" required placeholder="Password">
+            </div>
+            <div>
+                <label for="">confirm-password:</label> <br>
+                <input type="password" required placeholder="confirm-password">
+            </div>
+            <div>
+                <button>Submit</button>
+            </div>
+        </div>
+    </form> -->
+    <section class="contact" id="contact">
+        <h2>About Us</h2>
+        <p style="width: 90%; margin: auto;">We are passionate to provide the home of captivating stories and unforgettable characters. Our goal is to bring you immersive novels that transport you to new worlds, evoke powerful emotions, and keep you hooked from start to finish.</p>
+        <p>Email: NoorFatima@novelhub.com</p>
+        <p>Address: 123 Book Street, Sgd  City, 45678</p>
+    </section>
+</body>
+</html>
+<script src="novel.js"></script>
